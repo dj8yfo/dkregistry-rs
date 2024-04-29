@@ -16,7 +16,7 @@ async fn main() {
 
     let image = match std::env::args().nth(2) {
         Some(x) => x,
-        None => "library/debian".into(),
+        None => "sourcescan/cargo-near".into(),
     };
     println!("[{}] requesting tags for image {}", registry, image);
 
